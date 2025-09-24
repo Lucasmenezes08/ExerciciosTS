@@ -1,6 +1,6 @@
 const arr:number[] = [2,3,1,5,4,8,7,6,10];
 
-const quicksort = (array:number[]) => {
+const quicksort = (array:number[]):any => {
 
     if (array.length < 2){
         return array
@@ -22,5 +22,4 @@ const quicksort = (array:number[]) => {
 
     return [...quicksort(left) , pivot , ...quicksort(right)];
 }
-
 console.log (quicksort(arr));
